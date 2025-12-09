@@ -12,10 +12,10 @@
     --glass: rgba(255, 255, 255, 0.04);
     --accent: #06b6d4;
     /* cyan */
-    --accent-2: #7dd3fc;
+    --accent-2: #27556b;
     /* soft cyan */
     --muted: #9fb6c8;
-    --text: #e6f0f6;
+    --text: #fbfbfc;
     --radius: 12px;
     --max: 1100px;
     --shadow: 0 8px 24px rgba(2, 6, 23, 0.6);
@@ -24,7 +24,7 @@
 
 /* ====== Base ====== */
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 html,
@@ -70,14 +70,19 @@ header {
     color: var(--text);
     text-decoration: none;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1.05rem
+}
+
+.logo span {
+    color: var(--accent);
+    margin-left: 6px;
+    font-weight: 600
 }
 
 /* transparent vs solid states */
 header.transparent {
     background: linear-gradient(180deg, rgba(6, 11, 20, 0.12), rgba(6, 11, 20, 0.06));
-    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
-    padding: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02)
 }
 
 header.solid {
@@ -91,7 +96,6 @@ nav.nav a {
     text-decoration: none;
     margin-left: 18px;
     font-weight: 600;
-    font-size: 17px;
 }
 
 nav.nav {
