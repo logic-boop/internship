@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Codveda Portfolio — Landing</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Header: transparent at top, solid on scroll down, transparent on scroll up -->
+    <header id="site-header" class="transparent" role="banner">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">VEDA</a>
+
+            <nav id="nav" class="nav" role="navigation" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button id="hamburger" class="hamburger" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-inner container">
+                <div class="hero-left reveal">
+                    <h1>Design. Build. Ship.</h1>
+                    <p class="lead">A polished internship project for Codveda — responsive, animated, and
+                        beginner-friendly. Build modern web experiences using HTML, CSS & JavaScript.</p>
+
+                    <div class="hero-ctas">
+                        <a class="btn" href="projects.html">View Projects</a>
+                        <a class="btn outline" href="contact.html">Contact Me</a>
+                    </div>
+                </div>
+
+                <div class="hero-right reveal delay">
+                    <!-- quality image from Unsplash -->
+                    <img alt="developer workspace"
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1400&q=80&auto=format&fit=crop" />
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section id="features" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">What this project shows</h2>
+
+                <div class="grid features-grid">
+                    <div class="card reveal">
+                        <h3>Responsive Design</h3>
+                        <p>Mobile-first layout, fluid grid and accessible HTML structure.</p>
+                    </div>
+
+                    <div class="card reveal delay">
+                        <h3>Smooth Animations</h3>
+                        <p>Scroll reveal, subtle hover states and a polished header UX.</p>
+                    </div>
+
+                    <div class="card reveal delay-lg">
+                        <h3>Vanilla JS</h3>
+                        <p>Interactive form validation, mobile menu, and DOM manipulation (counter app).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS PREVIEW -->
+        <section id="projects-preview" class="section">
+            <div class="container">
+                <h2 class="section-title reveal">Selected Projects</h2>
+
+                <div class="projects-grid">
+                    <article class="project-card reveal">
+                        <img alt="landing preview"
+                            src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=1200&q=80&auto=format&fit=crop" />
+                        <div class="project-body">
+                            <h3>Landing & Brand Site</h3>
+                            <p>Clean layout and premium imagery — perfect for showcasing a service or product.</p>
+                            <a class="btn small" href="index.html">View</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal delay">
+                        <img alt="projects preview"
+                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80&auto=format&fit=crop" />
+                        <div class="project-body">
+                            <h3>Interactive Projects</h3>
+                            <p>Includes a counter app and other DOM-based tasks — simple and instructive.</p>
+                            <a class="btn small" href="projects.html">Open</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal delay-lg">
+                        <img alt="contact preview"
+                            src="https://images.unsplash.com/photo-1520975914252-6a8e5f6c7d7a?w=1200&q=80&auto=format&fit=crop" />
+                        <div class="project-body">
+                            <h3>Contact Form</h3>
+                            <p>Real-time validation and helpful UX — great for portfolio submissions.</p>
+                            <a class="btn small" href="contact.html">Try</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container footer-inner">
+                <p>Made for Codveda Internship •
+                    <a href="https://www.codveda.com" target="_blank" rel="noopener">Codveda</a>
+                </p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="main.js" defer></script>
+</body>
+
+</html>

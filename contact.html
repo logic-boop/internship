@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Codveda Portfolio — Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header id="site-header" class="transparent" role="banner">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">Codveda<span>Portfolio</span></a>
+
+            <nav id="nav" class="nav" role="navigation" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button id="hamburger" class="hamburger" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container section">
+        <h1 class="section-title reveal">Contact Me</h1>
+        <p class="reveal">Fill the form below — validation happens in real time. No data is sent anywhere; this is a
+            frontend demo.</p>
+
+        <form id="contact-form" class="form card reveal">
+            <label>
+                Full name
+                <input id="name" name="name" type="text" required placeholder="Jane Doe" />
+                <small class="error" id="name-error"></small>
+            </label>
+
+            <label>
+                Email
+                <input id="email" name="email" type="email" required placeholder="you@example.com" />
+                <small class="error" id="email-error"></small>
+            </label>
+
+            <label>
+                Phone (optional)
+                <input id="phone" name="phone" type="tel" placeholder="+234..." />
+                <small class="error" id="phone-error"></small>
+            </label>
+
+            <label>
+                Password (for demo)
+                <div class="password-row">
+                    <input id="password" name="password" type="password" placeholder="Create a password"
+                        minlength="6" />
+                    <button type="button" id="toggle-password" class="btn small outline">Show</button>
+                </div>
+                <small class="error" id="password-error"></small>
+            </label>
+
+            <label>
+                Message
+                <textarea id="message" name="message" rows="5" required
+                    placeholder="Tell me about your project"></textarea>
+                <small class="error" id="message-error"></small>
+            </label>
+
+            <div class="form-actions">
+                <button class="btn" type="submit">Send message</button>
+                <button class="btn outline" type="reset">Reset</button>
+            </div>
+
+            <p id="form-success" class="success" aria-live="polite" style="display:none">Thanks! Your message looks
+                great — save and submit to your backend when ready.</p>
+        </form>
+
+        <footer class="footer">
+            <div class="container footer-inner">
+                <p>Made for Codveda Internship • <a href="index.html">Back home</a></p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="main.js" defer></script>
+    <script src="contact.js" defer></script>
+</body>
+
+</html>

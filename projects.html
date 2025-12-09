@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Codveda Portfolio — Projects</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header id="site-header" class="transparent" role="banner">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">Codveda<span>Portfolio</span></a>
+
+            <nav id="nav" class="nav" role="navigation" aria-label="Main">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <button id="hamburger" class="hamburger" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container section">
+        <h1 class="section-title reveal">Projects & Demo</h1>
+
+        <section class="projects-list reveal">
+            <p>Below is the Counter app (a Level 1 DOM task) — simple, clear and beginner-friendly.</p>
+
+            <div class="counter-card">
+                <div class="counter-display" id="counter-value">0</div>
+                <div class="counter-controls">
+                    <button class="btn" id="decrement">- Decrement</button>
+                    <button class="btn" id="increment">+ Increment</button>
+                    <button class="btn outline" id="reset">Reset</button>
+                </div>
+                <p class="muted small">Counter will not go below zero.</p>
+            </div>
+        </section>
+
+        <section class="section more-projects">
+            <h2 class="section-title reveal">More Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card reveal">
+                    <img alt="project"
+                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80&auto=format&fit=crop" />
+                    <div class="project-body">
+                        <h3>Project Card</h3>
+                        <p>Short project descriptions that you can expand into full demos.</p>
+                        <a class="btn small" href="index.html">Open</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal delay">
+                    <img alt="project"
+                        src="https://images.unsplash.com/photo-1506765515384-028b60a970df?w=1200&q=80&auto=format&fit=crop" />
+                    <div class="project-body">
+                        <h3>UI Examples</h3>
+                        <p>Buttons, cards, and responsive layouts — perfect for portfolios.</p>
+                        <a class="btn small" href="index.html">Open</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer-inner">
+                <p>Made for Codveda Internship • <a href="index.html">Back home</a></p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="main.js" defer></script>
+    <script src="projects.js" defer></script>
+</body>
+
+</html>
